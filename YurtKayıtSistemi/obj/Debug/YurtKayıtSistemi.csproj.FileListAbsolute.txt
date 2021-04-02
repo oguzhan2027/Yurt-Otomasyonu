@@ -2,9 +2,9 @@ C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\bin\Debug\Yur
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\bin\Debug\YurtKayıtSistemi.exe
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\bin\Debug\YurtKayıtSistemi.pdb
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.csprojAssemblyReference.cache
-C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.Form1.resources
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.Properties.Resources.resources
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.csproj.GenerateResource.cache
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.csproj.CoreCompileInputs.cache
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.exe
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.pdb
+C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmOgrKayit.resources

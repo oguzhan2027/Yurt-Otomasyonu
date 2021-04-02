@@ -1,7 +1,7 @@
 ﻿
 namespace YurtKayıtSistemi
 {
-    partial class Form1
+    partial class FrmOgrKayit
     {
         /// <summary>
         /// Required designer variable.
@@ -153,7 +153,7 @@ namespace YurtKayıtSistemi
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(43, 260);
+            this.label6.Location = new System.Drawing.Point(423, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 21);
             this.label6.TabIndex = 11;
@@ -163,7 +163,7 @@ namespace YurtKayıtSistemi
             // 
             this.cmbBolum.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbBolum.FormattingEnabled = true;
-            this.cmbBolum.Location = new System.Drawing.Point(182, 260);
+            this.cmbBolum.Location = new System.Drawing.Point(562, 14);
             this.cmbBolum.Name = "cmbBolum";
             this.cmbBolum.Size = new System.Drawing.Size(203, 29);
             this.cmbBolum.TabIndex = 12;
@@ -171,7 +171,7 @@ namespace YurtKayıtSistemi
             // txtMail
             // 
             this.txtMail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMail.Location = new System.Drawing.Point(182, 314);
+            this.txtMail.Location = new System.Drawing.Point(562, 68);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(203, 29);
             this.txtMail.TabIndex = 14;
@@ -180,7 +180,7 @@ namespace YurtKayıtSistemi
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(43, 322);
+            this.label7.Location = new System.Drawing.Point(423, 76);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 21);
             this.label7.TabIndex = 13;
@@ -190,7 +190,7 @@ namespace YurtKayıtSistemi
             // 
             this.cmbOdaNo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbOdaNo.FormattingEnabled = true;
-            this.cmbOdaNo.Location = new System.Drawing.Point(182, 363);
+            this.cmbOdaNo.Location = new System.Drawing.Point(562, 117);
             this.cmbOdaNo.Name = "cmbOdaNo";
             this.cmbOdaNo.Size = new System.Drawing.Size(203, 29);
             this.cmbOdaNo.TabIndex = 16;
@@ -199,7 +199,7 @@ namespace YurtKayıtSistemi
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(39, 363);
+            this.label8.Location = new System.Drawing.Point(419, 125);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 21);
             this.label8.TabIndex = 15;
@@ -209,7 +209,7 @@ namespace YurtKayıtSistemi
             // txtVeliAdSoyad
             // 
             this.txtVeliAdSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtVeliAdSoyad.Location = new System.Drawing.Point(182, 406);
+            this.txtVeliAdSoyad.Location = new System.Drawing.Point(562, 160);
             this.txtVeliAdSoyad.Name = "txtVeliAdSoyad";
             this.txtVeliAdSoyad.Size = new System.Drawing.Size(203, 29);
             this.txtVeliAdSoyad.TabIndex = 18;
@@ -218,7 +218,7 @@ namespace YurtKayıtSistemi
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(39, 414);
+            this.label9.Location = new System.Drawing.Point(419, 168);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(122, 21);
             this.label9.TabIndex = 17;
@@ -227,7 +227,7 @@ namespace YurtKayıtSistemi
             // mskVeliTelefon
             // 
             this.mskVeliTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskVeliTelefon.Location = new System.Drawing.Point(182, 456);
+            this.mskVeliTelefon.Location = new System.Drawing.Point(562, 210);
             this.mskVeliTelefon.Mask = "(999) 000-0000";
             this.mskVeliTelefon.Name = "mskVeliTelefon";
             this.mskVeliTelefon.Size = new System.Drawing.Size(203, 29);
@@ -237,7 +237,7 @@ namespace YurtKayıtSistemi
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(39, 464);
+            this.label10.Location = new System.Drawing.Point(419, 218);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(102, 21);
             this.label10.TabIndex = 19;
@@ -247,7 +247,7 @@ namespace YurtKayıtSistemi
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(39, 509);
+            this.label11.Location = new System.Drawing.Point(39, 278);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(91, 21);
             this.label11.TabIndex = 21;
@@ -256,29 +256,29 @@ namespace YurtKayıtSistemi
             // rchAdres
             // 
             this.rchAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchAdres.Location = new System.Drawing.Point(182, 512);
+            this.rchAdres.Location = new System.Drawing.Point(182, 281);
             this.rchAdres.Name = "rchAdres";
-            this.rchAdres.Size = new System.Drawing.Size(203, 96);
+            this.rchAdres.Size = new System.Drawing.Size(583, 96);
             this.rchAdres.TabIndex = 22;
             this.rchAdres.Text = "";
             // 
             // btnKaydet
             // 
             this.btnKaydet.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.Location = new System.Drawing.Point(182, 629);
+            this.btnKaydet.Location = new System.Drawing.Point(360, 414);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(203, 43);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmOgrKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(463, 692);
+            this.ClientSize = new System.Drawing.Size(828, 479);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.rchAdres);
             this.Controls.Add(this.label11);
@@ -304,8 +304,9 @@ namespace YurtKayıtSistemi
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FrmOgrKayit";
             this.Text = "Öğrenci Kayıt";
+            this.Load += new System.EventHandler(this.FrmOgrKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
