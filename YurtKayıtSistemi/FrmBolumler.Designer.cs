@@ -44,6 +44,7 @@ namespace YurtKayıtSistemi
             this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.yurtOtomasyonuDataSet = new YurtKayıtSistemi.YurtOtomasyonuDataSet();
             this.bolumlerTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSetTableAdapters.BolumlerTableAdapter();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).BeginInit();
@@ -61,6 +62,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumEkle.TabIndex = 0;
             this.pcbBolumEkle.TabStop = false;
+            this.toolTip1.SetToolTip(this.pcbBolumEkle, "Bölüm Ekle");
             this.pcbBolumEkle.Click += new System.EventHandler(this.pcbBolumEkle_Click);
             // 
             // pcbBolumSil
@@ -72,6 +74,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumSil.TabIndex = 1;
             this.pcbBolumSil.TabStop = false;
+            this.toolTip1.SetToolTip(this.pcbBolumSil, "Bölüm Sil");
             this.pcbBolumSil.Click += new System.EventHandler(this.pcbBolumSil_Click);
             // 
             // pcbBolumDuzenle
@@ -83,6 +86,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumDuzenle.TabIndex = 2;
             this.pcbBolumDuzenle.TabStop = false;
+            this.toolTip1.SetToolTip(this.pcbBolumDuzenle, "Bölüm Güncelle");
             this.pcbBolumDuzenle.Click += new System.EventHandler(this.pcbBolumDuzenle_Click);
             // 
             // label1
@@ -209,5 +213,6 @@ namespace YurtKayıtSistemi
         private YurtOtomasyonuDataSetTableAdapters.BolumlerTableAdapter bolumlerTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumAdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

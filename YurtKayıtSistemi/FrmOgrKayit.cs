@@ -17,37 +17,36 @@ namespace YurtKayıtSistemi
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-P7OUVT3;Initial Catalog=YurtOtomasyonu;Integrated Security=True");
-        
+        SqlBaglantim bgl = new SqlBaglantim();    
 
         private void FrmOgrKayit_Load(object sender, EventArgs e)
         {
             //bolumleri listeleme komutları
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select  BolumAd From Bolumler", baglanti);
+           
+            SqlCommand komut = new SqlCommand("Select  BolumAd From Bolumler", bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             while (oku.Read())
             {
                 cmbBolum.Items.Add(oku[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
             // boş odsaları listeleme komutları
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif", baglanti);
+            
+            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif", bgl.baglanti());
             SqlDataReader oku2 = komut2.ExecuteReader();
             while (oku2.Read())
             {
                 cmbOdaNo.Items.Add(oku2[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             try
             {
-                baglanti.Open();
-                SqlCommand komutKaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTc,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", baglanti);
+               
+                SqlCommand komutKaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTc,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres)values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", bgl.baglanti());
                 komutKaydet.Parameters.AddWithValue("@p1", txtOgrAd.Text);
                 komutKaydet.Parameters.AddWithValue("@p2", txtOgrSoyad.Text);
                 komutKaydet.Parameters.AddWithValue("@p3", mskTC.Text);
@@ -60,7 +59,7 @@ namespace YurtKayıtSistemi
                 komutKaydet.Parameters.AddWithValue("@p10", mskVeliTelefon.Text);
                 komutKaydet.Parameters.AddWithValue("@p11", rchAdres.Text);
                 komutKaydet.ExecuteNonQuery();
-                baglanti.Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("kayıt başarılı bir şekilde eklendi");
             }
             catch (Exception)
