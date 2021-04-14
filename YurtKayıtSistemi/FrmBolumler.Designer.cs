@@ -39,17 +39,17 @@ namespace YurtKayıtSistemi
             this.txtBolumad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtOtomasyonuDataSet = new YurtKayıtSistemi.YurtOtomasyonuDataSet();
-            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bolumlerTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSetTableAdapters.BolumlerTableAdapter();
             this.bolumidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtOtomasyonuDataSet = new YurtKayıtSistemi.YurtOtomasyonuDataSet();
+            this.bolumlerTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSetTableAdapters.BolumlerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pcbBolumEkle
@@ -61,6 +61,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumEkle.TabIndex = 0;
             this.pcbBolumEkle.TabStop = false;
+            this.pcbBolumEkle.Click += new System.EventHandler(this.pcbBolumEkle_Click);
             // 
             // pcbBolumSil
             // 
@@ -71,6 +72,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumSil.TabIndex = 1;
             this.pcbBolumSil.TabStop = false;
+            this.pcbBolumSil.Click += new System.EventHandler(this.pcbBolumSil_Click);
             // 
             // pcbBolumDuzenle
             // 
@@ -81,6 +83,7 @@ namespace YurtKayıtSistemi
             this.pcbBolumDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbBolumDuzenle.TabIndex = 2;
             this.pcbBolumDuzenle.TabStop = false;
+            this.pcbBolumDuzenle.Click += new System.EventHandler(this.pcbBolumDuzenle_Click);
             // 
             // label1
             // 
@@ -94,6 +97,7 @@ namespace YurtKayıtSistemi
             // 
             // txtBolumid
             // 
+            this.txtBolumid.Enabled = false;
             this.txtBolumid.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtBolumid.Location = new System.Drawing.Point(153, 30);
             this.txtBolumid.Name = "txtBolumid";
@@ -130,20 +134,7 @@ namespace YurtKayıtSistemi
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(468, 222);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // yurtOtomasyonuDataSet
-            // 
-            this.yurtOtomasyonuDataSet.DataSetName = "YurtOtomasyonuDataSet";
-            this.yurtOtomasyonuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bolumlerBindingSource
-            // 
-            this.bolumlerBindingSource.DataMember = "Bolumler";
-            this.bolumlerBindingSource.DataSource = this.yurtOtomasyonuDataSet;
-            // 
-            // bolumlerTableAdapter
-            // 
-            this.bolumlerTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // bolumidDataGridViewTextBoxColumn
             // 
@@ -158,6 +149,20 @@ namespace YurtKayıtSistemi
             this.bolumAdDataGridViewTextBoxColumn.DataPropertyName = "BolumAd";
             this.bolumAdDataGridViewTextBoxColumn.HeaderText = "BolumAd";
             this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
+            // 
+            // bolumlerBindingSource
+            // 
+            this.bolumlerBindingSource.DataMember = "Bolumler";
+            this.bolumlerBindingSource.DataSource = this.yurtOtomasyonuDataSet;
+            // 
+            // yurtOtomasyonuDataSet
+            // 
+            this.yurtOtomasyonuDataSet.DataSetName = "YurtOtomasyonuDataSet";
+            this.yurtOtomasyonuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bolumlerTableAdapter
+            // 
+            this.bolumlerTableAdapter.ClearBeforeFill = true;
             // 
             // FrmBolumler
             // 
@@ -182,8 +187,8 @@ namespace YurtKayıtSistemi
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumSil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBolumDuzenle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
