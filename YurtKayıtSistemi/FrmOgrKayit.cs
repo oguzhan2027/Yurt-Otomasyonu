@@ -43,6 +43,7 @@ namespace YurtKayıtSistemi
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            //ogrenci bilgileri kayıt edilme komutlsrı
             try
             {
                
@@ -61,6 +62,23 @@ namespace YurtKayıtSistemi
                 komutKaydet.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("kayıt başarılı bir şekilde eklendi");
+
+                // ogrid labele çekme
+                SqlCommand komut = new SqlCommand("Select Ogrid from Ogrenci",bgl.baglanti());
+                SqlDataReader oku = komut.ExecuteReader();
+                while (oku.Read())
+                {
+                    label12.Text = oku[0].ToString();
+                }
+                bgl.baglanti().Close();
+
+                //ögrenci borç alanı oluşturma
+                SqlCommand komutkaydet2 = new SqlCommand("insert into Borclar (Ogrid,OgrAd,OgrSoyad) values (@b1,@b2,@b3)",bgl.baglanti());
+                komutkaydet2.Parameters.AddWithValue("@b1",label12.Text);
+                komutkaydet2.Parameters.AddWithValue("@b2", txtOgrAd.Text);
+                komutkaydet2.Parameters.AddWithValue("@b3", txtOgrSoyad.Text);
+                komutkaydet2.ExecuteNonQuery();
+                bgl.baglanti().Close();
             }
             catch (Exception)
             {

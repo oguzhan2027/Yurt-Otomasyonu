@@ -53,6 +53,7 @@ namespace YurtKayıtSistemi
             this.label11 = new System.Windows.Forms.Label();
             this.rchAdres = new System.Windows.Forms.RichTextBox();
             this.btnKaydet = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -274,6 +275,16 @@ namespace YurtKayıtSistemi
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(40, 349);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "label12";
+            this.label12.Visible = false;
+            // 
             // FrmOgrKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +292,7 @@ namespace YurtKayıtSistemi
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(828, 479);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.rchAdres);
             this.Controls.Add(this.label11);
@@ -340,6 +352,7 @@ namespace YurtKayıtSistemi
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox rchAdres;
         private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Label label12;
     }
 }
 
