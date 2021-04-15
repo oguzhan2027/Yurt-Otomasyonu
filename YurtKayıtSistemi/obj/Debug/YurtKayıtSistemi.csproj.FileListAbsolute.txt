@@ -11,3 +11,4 @@ C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\Yur
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmBolumler.resources
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmAnaForm.resources
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmOdemeler.resources
+C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmOgrListe.resources
