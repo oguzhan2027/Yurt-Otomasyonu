@@ -20,7 +20,7 @@ namespace YurtKayıtSistemi
         public string id;
         private void FrmOgrDuzenle_Load(object sender, EventArgs e)
         {
-            label1.Text = id;
+            txtid.Text = id;
         }
     }
 }
