@@ -23,5 +23,14 @@ namespace YurtKayıtSistemi
             this.ogrenciTableAdapter.Fill(this.yurtOtomasyonuDataSet3.Ogrenci);
 
         }
+        int secilen;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            secilen = dataGridView1.SelectedCells[0].RowIndex;
+            FrmOgrDuzenle fr = new FrmOgrDuzenle();
+            fr.id = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            fr.Show();
+                
+        }
     }
 }

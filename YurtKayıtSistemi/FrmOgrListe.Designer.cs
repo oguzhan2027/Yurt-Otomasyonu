@@ -32,9 +32,6 @@ namespace YurtKayıtSistemi
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrListe));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtOtomasyonuDataSet3 = new YurtKayıtSistemi.YurtOtomasyonuDataSet3();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ogrenciTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSet3TableAdapters.OgrenciTableAdapter();
             this.ogridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +44,12 @@ namespace YurtKayıtSistemi
             this.ogrVeliAdSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrVeliTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrVeliAdresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtOtomasyonuDataSet3 = new YurtKayıtSistemi.YurtOtomasyonuDataSet3();
+            this.ogrenciTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSet3TableAdapters.OgrenciTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,20 +75,7 @@ namespace YurtKayıtSistemi
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(845, 450);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // yurtOtomasyonuDataSet3
-            // 
-            this.yurtOtomasyonuDataSet3.DataSetName = "YurtOtomasyonuDataSet3";
-            this.yurtOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource
-            // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurtOtomasyonuDataSet3;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ogridDataGridViewTextBoxColumn
             // 
@@ -163,6 +150,20 @@ namespace YurtKayıtSistemi
             this.ogrVeliAdresDataGridViewTextBoxColumn.HeaderText = "OgrVeliAdres";
             this.ogrVeliAdresDataGridViewTextBoxColumn.Name = "ogrVeliAdresDataGridViewTextBoxColumn";
             // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtOtomasyonuDataSet3;
+            // 
+            // yurtOtomasyonuDataSet3
+            // 
+            this.yurtOtomasyonuDataSet3.DataSetName = "YurtOtomasyonuDataSet3";
+            this.yurtOtomasyonuDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmOgrListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,8 +178,8 @@ namespace YurtKayıtSistemi
             this.Text = "FrmOgrListe";
             this.Load += new System.EventHandler(this.FrmOgrListe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }

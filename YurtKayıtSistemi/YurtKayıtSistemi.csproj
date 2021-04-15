@@ -64,6 +64,12 @@
     <Compile Include="FrmOdemeler.Designer.cs">
       <DependentUpon>FrmOdemeler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOgrDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrDuzenle.Designer.cs">
+      <DependentUpon>FrmOgrDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOgrKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOdemeler.resx">
       <DependentUpon>FrmOdemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrDuzenle.resx">
+      <DependentUpon>FrmOgrDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrKayit.resx">
       <DependentUpon>FrmOgrKayit.cs</DependentUpon>
