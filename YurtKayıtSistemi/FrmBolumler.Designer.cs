@@ -182,6 +182,7 @@ namespace YurtKayıtSistemi
             this.Controls.Add(this.pcbBolumDuzenle);
             this.Controls.Add(this.pcbBolumSil);
             this.Controls.Add(this.pcbBolumEkle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmBolumler";

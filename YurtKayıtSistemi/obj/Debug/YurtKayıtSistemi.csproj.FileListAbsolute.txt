@@ -9,3 +9,4 @@ C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\Yur
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.pdb
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmOgrKayit.resources
 C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmBolumler.resources
+C:\Users\OĞUZHAN\source\repos\YurtKayıtSistemi\YurtKayıtSistemi\obj\Debug\YurtKayıtSistemi.FrmAnaForm.resources
