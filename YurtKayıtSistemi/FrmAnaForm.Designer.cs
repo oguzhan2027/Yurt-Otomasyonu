@@ -29,6 +29,7 @@ namespace YurtKayıtSistemi
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.öğrencilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +59,21 @@ namespace YurtKayıtSistemi
             this.radyo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.yurtOtomasyonuDataSet1 = new YurtKayıtSistemi.YurtOtomasyonuDataSet1();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ogrenciTableAdapter = new YurtKayıtSistemi.YurtOtomasyonuDataSet1TableAdapters.OgrenciTableAdapter();
+            this.ogridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrOdaNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -74,7 +89,7 @@ namespace YurtKayıtSistemi
             this.erişimKolaylığıToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(679, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -268,21 +283,106 @@ namespace YurtKayıtSistemi
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ogridDataGridViewTextBoxColumn,
+            this.ogrAdDataGridViewTextBoxColumn,
+            this.ogrSoyadDataGridViewTextBoxColumn,
+            this.ogrOdaNoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ogrenciBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 115);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(446, 334);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // yurtOtomasyonuDataSet1
+            // 
+            this.yurtOtomasyonuDataSet1.DataSetName = "YurtOtomasyonuDataSet1";
+            this.yurtOtomasyonuDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurtOtomasyonuDataSet1;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
+            // ogridDataGridViewTextBoxColumn
+            // 
+            this.ogridDataGridViewTextBoxColumn.DataPropertyName = "Ogrid";
+            this.ogridDataGridViewTextBoxColumn.HeaderText = "Ogrid";
+            this.ogridDataGridViewTextBoxColumn.Name = "ogridDataGridViewTextBoxColumn";
+            this.ogridDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ogrAdDataGridViewTextBoxColumn
+            // 
+            this.ogrAdDataGridViewTextBoxColumn.DataPropertyName = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.HeaderText = "OgrAd";
+            this.ogrAdDataGridViewTextBoxColumn.Name = "ogrAdDataGridViewTextBoxColumn";
+            // 
+            // ogrSoyadDataGridViewTextBoxColumn
+            // 
+            this.ogrSoyadDataGridViewTextBoxColumn.DataPropertyName = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.HeaderText = "OgrSoyad";
+            this.ogrSoyadDataGridViewTextBoxColumn.Name = "ogrSoyadDataGridViewTextBoxColumn";
+            // 
+            // ogrOdaNoDataGridViewTextBoxColumn
+            // 
+            this.ogrOdaNoDataGridViewTextBoxColumn.DataPropertyName = "OgrOdaNo";
+            this.ogrOdaNoDataGridViewTextBoxColumn.HeaderText = "OgrOdaNo";
+            this.ogrOdaNoDataGridViewTextBoxColumn.Name = "ogrOdaNoDataGridViewTextBoxColumn";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(469, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(513, 162);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(679, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAnaForm";
-            this.Text = "FrmAnaForm";
+            this.Text = "Ana Sayfa";
+            this.Load += new System.EventHandler(this.FrmAnaForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtOtomasyonuDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,5 +418,16 @@ namespace YurtKayıtSistemi
         private System.Windows.Forms.ToolStripMenuItem radyo3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private YurtOtomasyonuDataSet1 yurtOtomasyonuDataSet1;
+        private System.Windows.Forms.BindingSource ogrenciBindingSource;
+        private YurtOtomasyonuDataSet1TableAdapters.OgrenciTableAdapter ogrenciTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogridDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ogrOdaNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
